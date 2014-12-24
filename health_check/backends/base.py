@@ -43,7 +43,10 @@ class BaseHealthCheckBackend(object):
         return self._status
 
     def pretty_status(self):
-        return u"%s" % (HEALTH_CHECK_STATUS_TYPE_TRANSLATOR[self.status])
+        try:
+            return u"%s" % (HEALTH_CHECK_STATUS_TYPE_TRANSLATOR[self.status])
+        except:
+            return u"%s" % self.status
 
     @classmethod
     def identifier(cls):
