@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 from django.core.files.base import ContentFile
 from django.core.files.storage import get_storage_class
-from health_check.backends.base import BaseHealthCheckBackend, ServiceUnavailable
+from django_health_check.health_check.backends.base import BaseHealthCheckBackend, ServiceUnavailable
 import random
 import datetime
 

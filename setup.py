@@ -1,6 +1,6 @@
 import os
 from setuptools import setup
-from health_check import __version__
+from django_health_check.health_check import __version__
 
 
 # Utility function to read the README file.

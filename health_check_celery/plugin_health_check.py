@@ -1,6 +1,6 @@
-from health_check.plugins import plugin_dir
-from health_check.backends.base import BaseHealthCheckBackend, ServiceUnavailable
-from health_check_celery.tasks import add
+from django_health_check.health_check.plugins import plugin_dir
+from django_health_check.health_check.backends.base import BaseHealthCheckBackend, ServiceUnavailable
+from django_health_check.health_check_celery.tasks import add
 from datetime import datetime, timedelta
 from time import sleep
 

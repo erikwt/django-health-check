@@ -1,6 +1,6 @@
 from django.core.cache.backends.base import CacheKeyWarning
-from health_check.backends.base import BaseHealthCheckBackend, ServiceUnavailable, ServiceReturnedUnexpectedResult
-from health_check.plugins import plugin_dir
+from django_health_check.health_check.backends.base import BaseHealthCheckBackend, ServiceUnavailable, ServiceReturnedUnexpectedResult
+from django_health_check.health_check.plugins import plugin_dir
 from django.core.cache import cache
 
 class CacheBackend(BaseHealthCheckBackend):

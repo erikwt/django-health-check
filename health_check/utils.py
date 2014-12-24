@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.db.models.options import get_verbose_name
-from health_check.backends.base import HealthCheckStatusType, BaseHealthCheckBackend
-from health_check.plugins import plugin_dir
+from django_health_check.health_check.backends.base import HealthCheckStatusType, BaseHealthCheckBackend
+from django_health_check.health_check.plugins import plugin_dir
 
 
 class BaseHealthCheck(BaseHealthCheckBackend):

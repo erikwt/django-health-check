@@ -1,6 +1,6 @@
 #-*- coding: utf-8 -*-
-from health_check.plugins import plugin_dir
-from health_check_storage.base import StorageHealthCheck
+from django_health_check.health_check.plugins import plugin_dir
+from django_health_check.health_check_storage.base import StorageHealthCheck
 from django.conf import settings
 
 

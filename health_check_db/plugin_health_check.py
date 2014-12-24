@@ -1,7 +1,7 @@
-from health_check.backends.base import BaseHealthCheckBackend, ServiceUnavailable, ServiceReturnedUnexpectedResult
-from health_check_db.models import TestModel
+from django_health_check.health_check.backends.base import BaseHealthCheckBackend, ServiceUnavailable, ServiceReturnedUnexpectedResult
+from django_health_check.health_check_db.models import TestModel
 from django.db import DatabaseError, IntegrityError
-from health_check.plugins import plugin_dir
+from django_health_check.health_check.plugins import plugin_dir
 
 class DjangoDatabaseBackend(BaseHealthCheckBackend):
 

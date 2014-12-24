@@ -1,6 +1,6 @@
 # This is heavily inspired by the django admin sites.py
 
-from health_check.backends.base import BaseHealthCheckBackend
+from django_health_check.health_check.backends.base import BaseHealthCheckBackend
 
 class AlreadyRegistered(Exception):
     pass
